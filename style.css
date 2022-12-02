@@ -1,3 +1,25 @@
+.bg-img {
+    /* The image used */
+    background-image: url("Untitled312.png");
+  
+    min-height: 380px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
+  
+  /* Position the navbar container inside the image */
+  .container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+  }  
+
 /* The navigation bar */
 .navbar {
     overflow: hidden;
@@ -76,7 +98,7 @@
     font-family: "Poppins";
   }
   
-  img {
+  .bg-img {
     max-width: 100%;
     height: auto;
   }
@@ -108,4 +130,8 @@
       background-color: #fff2a5;
     background-image: linear-gradient(45deg, #fff2a5 8%, #FFCC70 19%, #f0804d 29%, #4158D0 44%, #C850C0 57%, #ffa7e9 84%);
       color: white;
+    }
+
+    .list {
+        text-align: center;
     }
