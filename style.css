@@ -104,6 +104,14 @@ p{
   max-width: 100%;
   height: auto;
 }
+
+.footer{
+  width: 100%;
+  background-color: cornflowerblue;
+  color: white;
+  text-align: left;
+  
+}
     
 /* Style all font awesome icons */
 .fa {
