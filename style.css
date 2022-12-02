@@ -1,0 +1,38 @@
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: cornflowerblue;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: whitesmoke;
+    color: cornflowerblue;
+  }
+    
+  
+    .navbar a.active {
+    background-color: coral;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .navbar .icon {
+    display: none;
+  }
+  
