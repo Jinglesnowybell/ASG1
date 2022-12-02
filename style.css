@@ -81,3 +81,31 @@
     height: auto;
   }
   
+  #Model  {
+    float: right;    
+     margin: 0 0 0 15px;
+    }
+    
+    /* Style all font awesome icons */
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+    }
+    
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+    }
+    
+    /* Set a specific color for each brand */
+    
+    /* Instagram */
+    .fa-instagram {
+      background-color: #fff2a5;
+    background-image: linear-gradient(45deg, #fff2a5 8%, #FFCC70 19%, #f0804d 29%, #4158D0 44%, #C850C0 57%, #ffa7e9 84%);
+      color: white;
+    }
