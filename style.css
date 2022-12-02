@@ -93,6 +93,7 @@
   
   p{
     font-family: "Poppins";
+    text-align: center;
   }
   .list{
     font-family: "Poppins";
@@ -133,5 +134,9 @@
     }
 
     .list {
+        text-align: center;
+    }
+
+    .footer {
         text-align: center;
     }
