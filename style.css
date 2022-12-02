@@ -63,4 +63,21 @@
   @media screen and (max-width:188px){
     .Softwares.responsive{position: relative;}
   }
+
+  h1{
+    font-family: "Sofia", sans-serif;
+    font-size: 30px
+  }
+  
+  p{
+    font-family: "Poppins";
+  }
+  .list{
+    font-family: "Poppins";
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
   
