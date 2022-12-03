@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang = 'en'>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title> Anna's Portfolio </title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="Sketches.css" rel="stylesheet" type="text/css" />
-  <link href="normalise.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Poppins">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="Sketches.css" rel="stylesheet" type="text/css">
+  <link href="normalise.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -16,27 +17,29 @@
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <header>
-    <div class="bg-img">
-      <div class="container">
-        <div class="navbar" id="myTopnav">
-        <a href="./index.html">Home</a>
-        <a href="./Sketches.html" class="active">Sketches</a>
-        <a href="./Illustrations.html">Illustrations</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-        </a>
-      </div>
+<header>
+  <div class="bg-img">
+    <div class="container">
+      <div class="navbar" id="myTopnav">
+      <a href="./index.html" class="active">Home</a>
+      <a href="./Sketches.html">Sketches</a>
+      <a href="./Illustrations.html">Illustrations</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+      </a>
     </div>
-  </header>
+  </div>
+ </div>
+</header>
 
   <section>
     <div style="padding-left:16px"></div>
-    <centre><h1> Welcome to my Sketches! </h1></centre>
+    <h1> Welcome to my Sketches! </h1>
     <p> When I first started using a pencil, I discovered how enjoyable it was. I continued to sketch on many scrap papers and 
       will now display some of the best works I personally feel I've made so far. </p><br>
+  </section>
   
-    <centre><h2>Pencil Sketch Gallery</h2></centre><br>
+    <h2>Pencil Sketch Gallery</h2><br>
 
     <!-- Container for the image gallery -->
     <div class="container2" id = "first">
@@ -44,47 +47,47 @@
     <!-- Full-width images with number text -->
     <div class="mySlides">
       <div class="numbertext">1 / 9</div>
-        <img src="Card Design 1.jpg" style="width:100%">
+      <img src="1CD.jpg" style="width:100%" alt="Card Design Happiness">
     </div>
   
     <div class="mySlides">
       <div class="numbertext">2 / 9</div>
-        <img src="Card Design 2.jpg" style="width:100%">
+      <img src="2CD.jpg" style="width:100%" alt="Card Design Sadness">
     </div>
   
     <div class="mySlides">
       <div class="numbertext">3 / 9</div>
-        <img src="Card Design 4.jpg" style="width:100%">
+      <img src="3CD.jpg" style="width:100%" alt="Card Design Sadness">
     </div>
   
     <div class="mySlides">
       <div class="numbertext">4 / 9</div>
-        <img src="Card Design 5.jpg" style="width:100%">
+      <img src="4CD.jpg" style="width:100%" alt="Card Design Sadness">
     </div>
   
     <div class="mySlides">
       <div class="numbertext">5 / 9</div>
-        <img src="Card Design 6.jpg" style="width:100%">
+      <img src="5CD.jpg" style="width:100%" alt="Card Design Happiness">
     </div>
   
     <div class="mySlides">
       <div class="numbertext">6 / 9</div>
-        <img src="Card Design 7.jpg" style="width:100%">
+      <img src="6CD.jpg" style="width:100%" alt="Card Design Happiness">
     </div>
   
     <div class="mySlides">
       <div class="numbertext">7 / 9</div>
-        <img src="Card Poster.jpg" style="width:100%">
+      <img src="CP.jpg" style="width:100%" alt="Card Poster Design">
     </div>
   
     <div class="mySlides">
       <div class="numbertext">8 / 9</div>
-        <img src="Instagram Heart Icon Redesign.jpg" style="width:100%">
+      <img src="IGHeart.jpg" style="width:100%" alt="Redesigned Art For Instagram's Heart Icon">
     </div>
   
     <div class="mySlides">
       <div class="numbertext">9 / 9</div>
-        <img src="Instagram Search Bar Icon Redesign.jpg" style="width:100%">
+      <img src="IGSearch.jpg" style="width:100%" alt="Redesigned Art For Instagram's Search Icon">
     </div>
   
     <!-- Next and previous buttons -->
@@ -101,44 +104,51 @@
   
     <!-- Image text -->
     <div class="caption-container">
-      <p> Black and White Illustration Gallery </p>
+      <p> Sketches Gallery </p>
     </div>
   
     <!-- Thumbnail images -->
     <div class = "row">
       <div class="column">
-        <img class="demo cursor" src="Card Design 1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      <img class="demo cursor" src="1CD.jpg" style="width:100%" onclick="currentSlide(1)" alt="Card Design Happiness">
       </div>
+
       <div class="column">
-        <img class="demo cursor" src="Card Design 2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+        <img class="demo cursor" src="2CD.jpg" style="width:100%" onclick="currentSlide(2)" alt="Card Design Sadness">
       </div>
+
       <div class="column">
-        <img class="demo cursor" src="Card Design 4.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      <img class="demo cursor" src="3CD.jpg" style="width:100%" onclick="currentSlide(3)" alt="Card Design Sadness">
       </div>
+
       <div class="column">
-        <img class="demo cursor" src="Card Design 5.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      <img class="demo cursor" src="4CD.jpg" style="width:100%" onclick="currentSlide(4)" alt="Card Design Sadness">
       </div>
+
       <div class="column">
-        <img class="demo cursor" src="Card Design 6.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      <img class="demo cursor" src="5CD.jpg" style="width:100%" onclick="currentSlide(5)" alt="Card Design Happiness">
       </div>
+
       <div class="column">
-        <img class="demo cursor" src="Card Design 7.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      <img class="demo cursor" src="6CD.jpg" style="width:100%" onclick="currentSlide(6)" alt="Card Design Happiness">
       </div>
+
       <div class="column">
-        <img class="demo cursor" src="Card Poster.jpg" style="width:100%" onclick="currentSlide(7)" alt="Snowy Mountains">
+      <img class="demo cursor" src="CP.jpg" style="width:100%" onclick="currentSlide(7)" alt="Card Poster Design">
       </div>
+
       <div class="column">
-        <img class="demo cursor" src="Instagram Heart Icon Redesign.jpg" style="width:100%" onclick="currentSlide(8)" alt="Snowy Mountains">
+      <img class="demo cursor" src="IGHeart.jpg" style="width:100%" onclick="currentSlide(8)" alt="Redesigned Art For Instagram's Heart Icon">
       </div>
+
       <div class="column">
-        <img class="demo cursor" src="Instagram Search Bar Icon Redesign.jpg" style="width:100%" onclick="currentSlide(9)" alt="Snowy Mountains">
+      <img class="demo cursor" src="IGSearch.jpg" style="width:100%" onclick="currentSlide(9)" alt="Redesigned Art For Instagram's Search Icon">
       </div>
     </div>
-  </div>
   
   <footer>
     <div class="footer-content">
-     <centre><h3>Annas Arts and Crafts</h3></centre>
+     <h3>Annas Arts and Crafts</h3>
        <p>I am currently a student who strives to improve her illustrations and sketches every day!
         I currently am focusing on styles such as semi-realism and cartoon forms. If anyone is interested to contactme,
         please do check out the links below this paragraph to contact me via social media!
@@ -168,4 +178,4 @@
   
 <script src="script.js"></script>
 </body>
-</html> 
+</html>
