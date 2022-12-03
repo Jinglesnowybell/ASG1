@@ -7,47 +7,52 @@ function myFunction() {
       x.className = "navbar";
     }
 }
-  
-const slideShows = document.querySelectorAll('.container');
 
-let slideShow, slideIndex; //will be set to the current slideShow as appropriate
-
-for (let i=0; i < slideShows.length; i++) {
-  slideShow = slideShows[i];
-  slideShow.setAttribute('data-slideIndex', 1); //instead of slideIndex = 1 we remember the index for each slideshow in a data attribute
-  slideIndex = 1;
-  showSlides(1);
+var indexes = {
+  firstsliderindex: 1,
+  secondsliderindex: 2,
+};
+showSlides(indexes.firstsliderindex, 'first', 'firstsliderindex');
+// Next/previous controls
+function plusSlides(n, id, index) { // n - number of slide, id - container id, index - current slide number in slider
+  showSlides(indexes[index] += n, id, index);
+}
+// Thumbnail image controls
+function currentSlide(n, id, index) {
+  showSlides(indexes[index] = n, id, index);
 }
 
-function plusSlides(n) {
-  slideShow = event.target.parentElement;
-  slideIndex = Number(slideShow.getAttribute('data-slideIndex'));
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  slideShow = event.target.parentElement.parentElement.parentElement;
-  slideIndex = Number(slideShow.getAttribute('data-slideIndex'));
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function showSlides(n, id, index) {
   var i;
-  var slides = slideShow.getElementsByClassName("mySlides");
-  var dots = slideShow.getElementsByClassName("demo");
-  var captionText = slideShow.querySelector(".caption");
-  
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  var slides = document.querySelectorAll(`#${id} .mySlides`);
+  var dots = document.querySelectorAll(`#${id} .dot`);
+  if (n > slides.length) {
+      indexes[index] = 1;
+  }
+  if (n < 1) {indexes[index] = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-  
-  slideShow.setAttribute('data-slideIndex', slideIndex); // remember the slideIndex for this slideShow
+  slides[indexes[index]-1].style.display = "block";
+  dots[indexes[index]-1].className += " active";
+}
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+
+
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 1000); // Change image every 1seconds
 }

@@ -38,7 +38,7 @@
   <centre><h2>Black and White Illustration Gallery</h2></centre>
 
   <!-- Container for the image gallery -->
-  <div class="container2">
+  <div class="container2" id = "first">
 
   <!-- Full-width images with number text -->
   <div class="mySlides">
@@ -122,8 +122,17 @@
   </div>
 
   <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <a class="prev" onclick="plusSlides(-1, 'first', 'firstsliderindex' )">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 'first', 'firstsliderindex')">&#10095;</a>
+
+  <!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, 'first', 'firstSliderIndex')"></span>
+  <span class="dot" onclick="currentSlide(2, 'first', 'firstSliderIndex')"></span>
+  <span class="dot" onclick="currentSlide(3, 'first', 'firstSliderIndex')"></span>
+</div>
+</div>
+
 
   <!-- Image text -->
   <div class="caption-container">
@@ -133,52 +142,52 @@
   <!-- Thumbnail images -->
   <div class = "row">
     <div class="column">
-      <img class="demo cursor" src="1-Black and White.PNG" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      <img class="demo cursor" src="1-Black and White.PNG" style="width:100%" onclick="currentSlide(1)" alt="Girl with Powers">
     </div>
     <div class="column">
-      <img class="demo cursor" src="2 - Black and White.PNG" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      <img class="demo cursor" src="2 - Black and White.PNG" style="width:100%" onclick="currentSlide(2)" alt="Girl with Flowers in Hair and Butterflies">
     </div>
     <div class="column">
-      <img class="demo cursor" src="3 - Black and White.PNG" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      <img class="demo cursor" src="3 - Black and White.PNG" style="width:100%" onclick="currentSlide(3)" alt="Person Crying with Butterfly From Tears">
     </div>
     <div class="column">
-      <img class="demo cursor" src="4 - Black and White.PNG" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      <img class="demo cursor" src="4 - Black and White.PNG" style="width:100%" onclick="currentSlide(4)" alt="Close up Of Eye Crying">
     </div>
     <div class="column">
-      <img class="demo cursor" src="5 - Black and White.PNG" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      <img class="demo cursor" src="5 - Black and White.PNG" style="width:100%" onclick="currentSlide(5)" alt="Girl Smiling with Hibiscus in Hair">
     </div>
     <div class="column">
-      <img class="demo cursor" src="6 - Black and White.PNG" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      <img class="demo cursor" src="6 - Black and White.PNG" style="width:100%" onclick="currentSlide(6)" alt="Girl with Bunned up Hair Holding Fan in Face and Blushing">
     </div>
     <div class="column">
-      <img class="demo cursor" src="7 - Black and White.PNG" style="width:100%" onclick="currentSlide(7)" alt="Snowy Mountains">
+      <img class="demo cursor" src="7 - Black and White.PNG" style="width:100%" onclick="currentSlide(7)" alt="Butterfly with Eye in Wings">
     </div>
     <div class="column">
-      <img class="demo cursor" src="8 - Black and White.PNG" style="width:100%" onclick="currentSlide(8)" alt="Snowy Mountains">
+      <img class="demo cursor" src="8 - Black and White.PNG" style="width:100%" onclick="currentSlide(8)" alt="Head to Neck Drawing of a Woman">
     </div>
     <div class="column">
-      <img class="demo cursor" src="9 - Black and White.PNG" style="width:100%" onclick="currentSlide(9)" alt="Snowy Mountains">
+      <img class="demo cursor" src="9 - Black and White.PNG" style="width:100%" onclick="currentSlide(9)" alt="Close-up Drawing Of Eye with Blush and Freckles">
     </div>
     <div class="column">
-      <img class="demo cursor" src="10 - Black and White.PNG" style="width:100%" onclick="currentSlide(10)" alt="Snowy Mountains">
+      <img class="demo cursor" src="10 - Black and White.PNG" style="width:100%" onclick="currentSlide(10)" alt="Flower in Rain">
     </div>
     <div class="column">
-      <img class="demo cursor" src="11 - Black and White.PNG" style="width:100%" onclick="currentSlide(11)" alt="Snowy Mountains">
+      <img class="demo cursor" src="11 - Black and White.PNG" style="width:100%" onclick="currentSlide(11)" alt="Girl and Unicorn Are the Same, Connection Through Hair">
     </div>
     <div class="column">
-      <img class="demo cursor" src="12 - Black and White.PNG" style="width:100%" onclick="currentSlide(12)" alt="Snowy Mountains">
+      <img class="demo cursor" src="12 - Black and White.PNG" style="width:100%" onclick="currentSlide(12)" alt="Guy Holding Umbrella for Girl in Rain">
     </div>
     <div class="column">
-      <img class="demo cursor" src="13 - Black and White.PNG" style="width:100%" onclick="currentSlide(13)" alt="Snowy Mountains">
+      <img class="demo cursor" src="13 - Black and White.PNG" style="width:100%" onclick="currentSlide(13)" alt="Close Up of Eye Blushing Girl">
     </div>
     <div class="column">
-      <img class="demo cursor" src="14 - Black and White.PNG" style="width:100%" onclick="currentSlide(14)" alt="Snowy Mountains">
+      <img class="demo cursor" src="14 - Black and White.PNG" style="width:100%" onclick="currentSlide(14)" alt="Mermaid on Rock in Rough Sea">
     </div>
     <div class="column">
-      <img class="demo cursor" src="15 - Black and White.PNG" style="width:100%" onclick="currentSlide(15)" alt="Snowy Mountains">
+      <img class="demo cursor" src="15 - Black and White.PNG" style="width:100%" onclick="currentSlide(15)" alt="River Flowing with Trees in The Ground">
     </div>
     <div class="column">
-      <img class="demo cursor" src="16 - Black and White.PNG" style="width:100%" onclick="currentSlide(16)" alt="Snowy Mountains">
+      <img class="demo cursor" src="16 - Black and White.PNG" style="width:100%" onclick="currentSlide(16)" alt="Girl Smiling with Heart and Ribbon">
     </div>
   </div>
 </div>
@@ -195,7 +204,7 @@
   <centre><h2>Coloured Illustration Gallery</h2></centre>
 
   <!-- Container for the image gallery -->
-  <div class="container2">
+  <div class="container2", id = "second">
 
   <!-- Full-width images with number text -->
   <div class="mySlides">
@@ -239,8 +248,16 @@
   </div>
 
   <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <a class="prev" onclick="plusSlides(-1, 'second', 'secondsliderindex')">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 'second', 'secondsliderindex')">&#10095;</a>
+
+  <!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, 'two', 'twoSliderIndex')"></span>
+  <span class="dot" onclick="currentSlide(2, 'two', 'twoSliderIndex')"></span>
+  <span class="dot" onclick="currentSlide(3, 'two', 'twoSliderIndex')"></span>
+</div>
+</div>
 
   <!-- Image text -->
   <div class="caption-container">
