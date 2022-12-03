@@ -7,3 +7,4 @@ References:
 
 Copied from W3School
 Adobe, blender and instagranm photo logos taken from WikiMedia Commons.
+Reference to https://stackoverflow.com/questions/66398125/add-more-than-one-slideshow-gallery-on-one-page for Javascript code.
