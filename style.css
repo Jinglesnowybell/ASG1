@@ -25,7 +25,7 @@
 /* The navigation bar */
 .navbar {
     overflow: hidden;
-    background-color: cornflowerblue;
+    background-color: black;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
@@ -46,13 +46,13 @@
   /* Change background on mouse-over */
   .navbar a:hover {
     background: whitesmoke;
-    color: cornflowerblue;
+    color: black;
   }
     
   
     .navbar a.active {
-    background-color: coral;
-    color: white;
+    background-color: white;
+    color: black;
   }
   
   /* Hide the link that should open and close the topnav on small screens */
@@ -113,8 +113,52 @@
 
 /*Body Codes*/
 
+* {
+  box-sizing: border-box;
+}
+
 body{
+  margin: 0;
   background-color: white;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+  text-align: center;
+}
+
+.Imageleft {
+  position: absolute;
+  text-align: left;
+  right: 85%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
 }
 
 h1{
@@ -170,11 +214,34 @@ h2{
   font-family: "Sofia", sans-serif;
   text-align: center;
 }
+
+h3{
+  font-family: "Poppins";
+  text-align: center;
+}
+
 h4{
   font-family: "Poppins";
   text-align: center;
 }
+
+@media (max-width:601px) {
+  .Imageleft{
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  }
+
 /* End of Body Codes*/
+
+
+
+
+
+
+
+
 
 
 
@@ -300,6 +367,7 @@ h4{
 
 
 /* Footer CSS */
+
 *{
   margin: 0;
   padding: 0;
@@ -331,6 +399,7 @@ footer{
   font-weight: 500;
   text-transform: capitalize;
   line-height: 3rem;
+  height: 13%;
 }
 
 .footer-content p{
@@ -411,6 +480,7 @@ display: block;
 }
 
 .footer-menu ul li a{
+  font-family: "Poppins";
   color: #cfd2d6;
   text-decoration: none;
 }
