@@ -8,3 +8,4 @@ References:
 Copied from W3School
 Adobe, blender and instagranm photo logos taken from WikiMedia Commons.
 Reference to https://stackoverflow.com/questions/60717232/javascript-how-to-add-multiple-image-slider-on-one-page-with-same-script for Gallery Java Script.
+Reference to https://www.foolishdeveloper.com/2021/09/responsive-footer-design.html for Footer.
