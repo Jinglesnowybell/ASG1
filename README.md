@@ -77,7 +77,8 @@ When shrunk, the images in the smaller gallery becom smaller whilst the big gall
 
 Bugs:
 A bug that I am currently facing is that my social media buttons and footer menu do not bring my viewers to their designated location when they click the buttons. 
-My Image Galleries also do not individually move but instead take turns between each gallery to automatically scroll through in the website.
+My image galleries also do not individually move but instead take turns between each gallery to automatically scroll through in the website.
+When I click onto my image galleries to scroll through them, the automatic carousel will refer me back to the artwork it was going to showcase before the click.
 
 # Credits
 # Content
