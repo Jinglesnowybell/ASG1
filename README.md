@@ -80,6 +80,8 @@ A bug that I am currently facing is that my social media buttons and footer menu
 My Image Galleries also do not individually move but instead take turns between each gallery to automatically scroll through in the website.
 
 # Credits
+# Content
+The annotations for codes are copied from W3School.
 # Media
 The photos used in this site were obtained from https://www.vectorstock.com/royalty-free-vector/random-organic-shapes-vector-37372578.
 # Acknowledgements
